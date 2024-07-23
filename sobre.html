@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LBS/Sobre</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='/CSS/aps.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+          <a href="inicial.html">
+            <img src="/img/logo.png" alt="LBS-logo" class="logo" />
+          </a>
+          <ul class="navbar-items">
+            <li>
+              <a href="./sobre.html" id="menu"></a>
+            </li>
+            <li>
+              <a href="./serviços.html" id="menu1"></a>
+            </li>
+            <li>
+              <a href="./esg.html" id="menu2"></a>
+            </li>
+            <li>
+              <a href="/index.html" id="menu3">Quiz</a>
+            </li>
+            <li>
+              <div id="language-selector">
+                <select id="lang-select">
+                    <option value="pt">pt</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+            </li>
+            <li>
+              <a href="/sit/entrar.html" class="default-btn" id="conta"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <br><h1 class="detail" id="s_title">Sobre nós</h1>
+       <div class="sobre">
+        <h2 class="info-sobre" id="s_subtitle">Sempre em busca do sucesso</h2>
+        <br><p id="s_paragraph">
+          LBS/Licenciamento brasileiro sustentável. Uma empresa brasileira de consultoria ESG, que traz os serviços desde a criação do planejamento sustentável,
+           implementação do sistema, descarbonização e gestão de riscos. Com capacidade de transformar o conceito de sustentabilidade e o pensamento de sua empresa,
+            a LBS sempre apoiando e guiando até seus objetivos e metas com soluções eficazes e práticas para os melhores resultados.
+          </p>
+        <img src="/img/img2pexels.jpg" alt="Mãos unidas">
+       </div>
+       <div class="pro-bloco">
+        <br><br>
+        <h1 class="barras" id="s_title2">Nossos propósitos</h1>
+        <section class="pro-container">
+            <ul>
+              <li>
+                <i class="fas fa-solid fa-lightbulb"></i>
+                <h3 id="s_titlepro">Inovação</h3>
+                <p id="s_paragraphpro">
+                  Novos conceitos, novas formas de inovar, o ESG é inserido para uma melhor gestão dos recursos, assim abrangindo diversas vertentes.
+                </p>
+              </li>
+              <li>
+                <i class="fas fa-solid fa-leaf"></i>
+                <h3 id="s_titlepro2">Sustentabilidade</h3>
+                <p id="s_paragraphpro2">
+                  Mudar o pensamento e a cultura da organização é sempre o objetivo, para que possa atingir diversas pessoas positivamente.
+                </p>
+              </li>
+              <li>
+                <i class=" fas fa-solid fa-chart-line"></i>
+                <h3 id="s_titlepro3">crescimento</h3>
+                <p id="s_paragraphpro3">
+                  Com a aplicação do ESG, melhora sua imagem para seus clientes que atrai investidores e empresários para o seu negócio.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="video-bloco">
+          <video src="/img/Licicenciamento Brasileiro Sustentável.mp4" controls autoplay muted loop></video>
+        </div>
+        <div class="final">
+          <section class="box-telefone">
+            <h2 class="detail4" id="f_fone">Telefone:</h2>
+            <p>(11) 95798-8543</p>
+          </section>
+          <section class="box-menu">
+            <h2 class="detail4">Menu:</h2>
+            <ul>
+              <li><a href="/sit/inicial.html" id="f_ho">Home</a></li>
+              <li><a href="/sit/sobre.html" id="f_sbr">Sobre nós</a></li>
+              <li><a href="/sit/serviços.html" id="f_ser">Serviços</a></li>
+              <li><a href="/sit/esg.html">ESG</a></li>
+              <li><a href="/index.html" id="f_quiz">Quiz</a></li>
+              <li><a href="/sit/entrar.html" id="f_cont">Contato</a></li>
+            </ul>
+          </section>
+          <div class="box-email">
+            <h2 class="detail4">E-mail:</h2>
+            <p>LBS@gmail.com</p>
+          </div>
+          <a class="topo" href="/sit/sobre.html" id="f_btn">Voltar ao topo</a>
+          <p class="desen" id="f_des">Desenvolvido @LBS</p>
+        <footer><img src="/img/logo.png" alt="LBS-logo" class="logof"></footer>
+      </div>
+      <script>
+
+// Defina os textos em diferentes idiomas
+const languages = {
+    pt: {
+        menu: "sobre",
+        menu1: "Serviços",
+        menu2: "ESG/impacto",
+        conta: "Contato",
+        s_title: "Sobre nós",
+        s_subtitle: "Sempre em busca do sucesso",
+        s_paragraph: "LBS/Licenciamento brasileiro sustentável. Uma empresa brasileira de consultoria ESG, que traz os serviços desde a criação do planejamento sustentável, implementação do sistema, descarbonização e gestão de riscos. Com capacidade de transformar o conceito de sustentabilidade e o pensamento de sua empresa, a LBS sempre apoiando e guiando até seus objetivos e metas com soluções eficazes e práticas para os melhores resultados.",
+        s_title2: "Nossos propósitos",
+        s_titlepro: "Inovação",
+        s_paragraphpro: "Novos conceitos, novas formas de inovar, o ESG é inserido para uma melhor gestão dos recursos, assim abrangindo diversas vertentes.",
+        s_titlepro2: "Sustentabilidade",
+        s_paragraphpro2: "Mudar o pensamento e a cultura da organização é sempre o objetivo, para que possa atingir diversas pessoas positivamente.",
+        s_titlepro3: "crescimento",
+        s_paragraphpro3: "Com a aplicação do ESG, melhora sua imagem para seus clientes que atrai investidores e empresários para o seu negócio.",
+        f_fone: "Telefone:",
+        f_sbr: "Sobre nós",
+        f_ser: "Serviços",
+        f_cont: "Contato",
+        f_des: "Desenvolvido @LBS",
+        f_btn: "Voltar ao topo",
+    },
+    en: {
+        menu: "about us",
+        menu1: "Services",
+        menu2: "ESG/impact",
+        conta: "contact",
+        s_title: "About us",
+        s_subtitle: "Always looking for success",
+        s_paragraph: "LBS/Brazilian Sustainable Licensing. A Brazilian ESG consulting company, which provides services from the creation of sustainable planning, system implementation, decarbonization and risk management. With the capacity to transform the concept of sustainability and your company's thinking, LBS always supports and guides you towards your objectives and goals with effective and practical solutions for the best results.",
+        s_title2: "Our goals",
+        s_titlepro: "Innovation",
+        s_paragraphpro: "New concepts, new ways of innovating, the ESG is inserted for better management of resources, thus covering various aspects.",
+        s_titlepro2: "Sustainability",
+        s_paragraphpro2: "Changing the thinking and culture of the organization is always the goal, so that it can reach many people positively.",
+        s_titlepro3: "growth",
+        s_paragraphpro3: "By applying ESG, you improve your image to your customers, which attracts investors and entrepreneurs to your business.",
+        f_fone:"Phone:",
+        f_sbr: "About us",
+        f_ser: "Services",
+        f_cont: "Contact",
+        f_des: "Developed @LBS",
+        f_btn: "Back to top",
+    }
+};
+
+// Função para atualizar os textos com base no idioma selecionado
+function updateLanguage() {
+    const selectedLang = document.getElementById('lang-select').value;
+    document.getElementById('menu').textContent = languages[selectedLang].menu;
+    document.getElementById('menu1').textContent = languages[selectedLang].menu1;
+    document.getElementById('menu2').textContent = languages[selectedLang].menu2;
+    document.getElementById('conta').textContent = languages[selectedLang].conta;
+    document.getElementById('s_title').textContent = languages[selectedLang].s_title;
+    document.getElementById('s_subtitle').textContent = languages[selectedLang].s_subtitle;
+    document.getElementById('s_paragraph').textContent = languages[selectedLang].s_paragraph;
+    document.getElementById('s_paragraph').textContent = languages[selectedLang].s_paragraph;
+    document.getElementById('s_title2').textContent = languages[selectedLang].s_title2; 
+    document.getElementById('s_titlepro').textContent = languages[selectedLang].s_titlepro;
+    document.getElementById('s_paragraphpro').textContent = languages[selectedLang].s_paragraphpro;  
+    document.getElementById('s_titlepro2').textContent = languages[selectedLang].s_titlepro2;    
+    document.getElementById('s_paragraphpro2').textContent = languages[selectedLang].s_paragraphpro2;
+    document.getElementById('s_titlepro3').textContent = languages[selectedLang].s_titlepro3;
+    document.getElementById('s_paragraphpro3').textContent = languages[selectedLang].s_paragraphpro3;
+    document.getElementById('f_fone').textContent = languages[selectedLang].f_fone;
+    document.getElementById('f_sbr').textContent = languages[selectedLang].f_sbr;
+    document.getElementById('f_ser').textContent = languages[selectedLang].f_ser;
+    document.getElementById('f_cont').textContent = languages[selectedLang].f_cont;  
+    document.getElementById('f_des').textContent = languages[selectedLang].f_des;
+    document.getElementById('f_btn').textContent = languages[selectedLang].f_btn;   
+}
+
+// Adicione um ouvinte de evento para alterar o idioma quando uma nova opção for selecionada
+document.getElementById('lang-select').addEventListener('change', updateLanguage);
+
+// Chame a função inicialmente para exibir o conteúdo no idioma padrão
+updateLanguage();
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LBS/Serviços</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='/CSS/aps.css'>
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+          <a href="inicial.html">
+            <img src="/img/logo.png" alt="LBS-logo" class="logo" />
+          </a>
+          <ul class="navbar-items">
+            <li>
+              <a href="./sobre.html" id="menu"></a>
+            </li>
+            <li>
+              <a href="./serviços.html" id="menu1"></a>
+            </li>
+            <li>
+              <a href="./esg.html" id="menu2">ESG/impacto</a>
+            </li>
+            <li>
+              <a href="/index.html" id="menu">Quiz</a>
+            </li>
+            <li>
+              <div id="language-selector">
+                <select id="lang-select">
+                    <option value="pt">pt</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+            </li>
+            <li>
+              <a href="/sit/entrar.html" class="default-btn" id="conta"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="banner-implementação">
+        <h1 class="titulo-dos-services" id="titleban1">Implementação</h1>
+      </div>
+      <br>
+      <div class="box-propostas">
+        <h1 class="detail" id="titlepro1">Solicite uma proposta</h1>
+      <div class="proposta">
+        <form>
+        <label for="name1" id="i_ncop">Nome completo*</label>
+        <input type="text" name="name1" id="name1" class="caixadetexto1" placeholder="..." required>
+            <label class="palavra1" for="name" id="i_nem">Nome da Empresa*</label>
+        <input type="text" name="name" id="name" class="caixadetexto1" placeholder="..." required><br><br>
+      </div>
+      <diV class="proposta">
+        <label for="E-mail" id="i_email">E-mail corporativo*</label>
+        <input type="email" name="E-mail" id="E-mail" class="caixadetexto1" placeholder="..." required>
+         <label class="palavra1" for="phone" id="i_tele">Telefone*</label>
+        <input type="number" name="phone" id="phone" class="caixadetexto1" placeholder="..." required><br><br>
+      </diV>
+    
+      <div class="proposta">
+        <label for="message" id="i_prop">Sua proposta*</label>
+        <textarea name="message" id="message" class="caixadetexto1" placeholder="..." required></textarea><br>
+        <input class="checkbox" type="checkbox" name="acesso" id="acesso" required >
+        <p class="paragrafo-condition" id="i_cond"> Eu concedo todas as informações para uso de contato e receber notificações da LBS.</p>
+    </div>
+    <button id="i_btn">Enviar</button>
+  </form>
+  </div>
+  <div class="final">
+    <section class="box-telefone">
+      <h2 class="detail4" id="f_fone">Telefone:</h2>
+      <p>(11) 95798-8543</p>
+    </section>
+    <section class="box-menu">
+      <h2 class="detail4">Menu:</h2>
+      <ul>
+        <li><a href="/sit/inicial.html" id="f_ho">Home</a></li>
+        <li><a href="/sit/sobre.html" id="f_sbr">Sobre nós</a></li>
+        <li><a href="/sit/serviços.html" id="f_ser">Serviços</a></li>
+        <li><a href="/sit/esg.html">ESG</a></li>
+        <li><a href="/index.html" id="f_quiz">Quiz</a></li>
+        <li><a href="/sit/entrar.html" id="f_cont">Contato</a></li>
+      </ul>
+    </section>
+    <div class="box-email">
+      <h2 class="detail4">E-mail:</h2>
+      <p class="email">LBS@gmail.com</p>
+    </div>
+    <a class="topo" href="/sit/ìmplementação.html" id="f_btn">Voltar ao topo</a>
+    <p class="desen" id="f_des">Desenvolvido @LBS</p>
+  <footer><img src="/img/logo.png" alt="LBS-logo" class="logof"></footer>
+</div>
+    <script>
+
+      // Defina os textos em diferentes idiomas
+const languages = {
+    pt: {
+        menu: "sobre",
+        menu1: "Serviços",
+        menu2: "ESG/impacto",
+        conta: "Contato",
+        titleban1: "Implementação",
+        titlepro1: "Solicite uma proposta",
+        i_ncop: "Nome completo*",
+        i_nem: "Nome da empresa*",
+        i_email: "E-mail corporativo*",
+        i_tele: "Telefone*",
+        i_prop: "Sua proposta*",
+        i_cond: "Eu concedo todas as informações para uso de contato e receber notificações da LBS.",
+        i_btn: "Enviar",
+        f_fone: "Telefone:",
+        f_sbr: "Sobre nós",
+        f_ser: "Serviços",
+        f_cont: "Contato",
+        f_des: "Desenvolvido @LBS",
+        f_btn: "Voltar ao topo",
+    },
+    en: {
+        menu: "about us",
+        menu1: "Services",
+        menu2: "ESG/impact",
+        conta: "contact",
+        titleban1: "Implementation",
+        titlepro1: "Request a proposal",
+        i_ncop: "Full name*",
+        i_nem: "Company Name*",
+        i_email: "Corporate e-mail*",
+        i_tele: "Phone*",
+        i_prop: "Your proposal*",
+        i_cond: "I grant all information for the use of contacting and receiving notifications from LBS.",
+        i_btn: "Submit",
+        f_fone:"Phone:",
+        f_sbr: "About us",
+        f_ser: "Services",
+        f_cont: "Contact",
+        f_des: "Developed @LBS",
+        f_btn: "Back to top",
+    }
+};
+
+// Função para atualizar os textos com base no idioma selecionado
+function updateLanguage() {
+    const selectedLang = document.getElementById('lang-select').value;
+    document.getElementById('menu').textContent = languages[selectedLang].menu;
+    document.getElementById('menu1').textContent = languages[selectedLang].menu1;
+    document.getElementById('menu2').textContent = languages[selectedLang].menu2;
+    document.getElementById('conta').textContent = languages[selectedLang].conta;
+    document.getElementById('titleban1').textContent = languages[selectedLang].titleban1;
+    document.getElementById('titlepro1').textContent = languages[selectedLang].titlepro1;
+    document.getElementById('i_ncop').textContent = languages[selectedLang].i_ncop;
+    document.getElementById('i_nem').textContent = languages[selectedLang].i_nem;
+    document.getElementById('i_email').textContent = languages[selectedLang].i_email;
+    document.getElementById('i_tele').textContent = languages[selectedLang].i_tele;
+    document.getElementById('i_prop').textContent = languages[selectedLang].i_prop;
+    document.getElementById('i_cond').textContent = languages[selectedLang].i_cond;
+    document.getElementById('i_btn').textContent = languages[selectedLang].i_btn;
+    document.getElementById('f_fone').textContent = languages[selectedLang].f_fone;
+    document.getElementById('f_sbr').textContent = languages[selectedLang].f_sbr;
+    document.getElementById('f_ser').textContent = languages[selectedLang].f_ser;
+    document.getElementById('f_cont').textContent = languages[selectedLang].f_cont;  
+    document.getElementById('f_des').textContent = languages[selectedLang].f_des;
+    document.getElementById('f_btn').textContent = languages[selectedLang].f_btn;  
+}
+
+// Adicione um ouvinte de evento para alterar o idioma quando uma nova opção for selecionada
+document.getElementById('lang-select').addEventListener('change', updateLanguage);
+
+// Chame a função inicialmente para exibir o conteúdo no idioma padrão
+updateLanguage();
+
+    </script>
+</body>
+</html>

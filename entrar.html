@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LBS/Contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='/CSS/aps.css'>
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+          <a href="inicial.html">
+            <img src="/img/logo.png" alt="LBS-logo" class="logo" />
+          </a>
+          <ul class="navbar-items">
+            <li>
+              <a href="./sobre.html" id="menu">Sobre</a>
+            </li>
+            <li>
+              <a href="./serviços.html" id="menu1">Serviços</a>
+            </li>
+            <li>
+              <a href="./esg.html" id="menu2">ESG/impacto</a>
+            </li>
+            <li>
+              <a href="/index.html" id="menu3">Quiz</a>
+            </li>
+            <li>
+              <div id="language-selector">
+                <select id="lang-select">
+                    <option value="pt">pt</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+            </li>
+            <li>
+              <a href="/sit/entrar.html" class="default-btn" id="conta"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <div class="box">
+        <div class="marca"></div>
+        <h2 id="e_title">Fale Conosco:</h2>
+        <br>
+        <form>
+          <div class="posi">
+            <label for="name1" id="e_nome">Nome completo*</label>
+        <input type="text" name="name1" id="name1" class="caixadetexto" placeholder="..." required>
+            <label class="palavra" for="name" id="e_empresa">Nome da Empresa*</label>
+        <input type="text" name="name" id="name" class="caixadetexto" placeholder="..." required><br><br>
+      </div>
+      <diV class="posi">
+        <label for="E-mail" id="e_email">E-mail*</label>
+        <input type="email" name="E-mail" id="E-mail" class="caixadetexto" placeholder="..." required>
+         <label class="palavra" for="phone" id="e_tele">Telefone*</label>
+        <input type="number" name="phone" id="phone" class="caixadetexto" placeholder="..." required><br><br>
+      </diV>
+    
+      <div class="posi">
+        <label for="message" id="e_msg">Mensagem*</label>
+        <textarea name="message" id="message" class="caixadetexto" placeholder="..." required></textarea><br>
+      </div>
+    
+        <button id="e_btn">Enviar</button>
+    </form>
+    </div>
+    <script>
+
+// Defina os textos em diferentes idiomas
+const languages = {
+    pt: {
+        menu: "sobre",
+        menu1: "Serviços",
+        menu2: "ESG/impacto",
+        conta: "Contato",
+        e_title: "Fale Conosco:",
+        e_nome: "Nome completo*",
+        e_empresa: "Nome da Empresa*",
+        e_email: "E-mail*",
+        e_tele: "Telefone*",
+        e_msg: "Mensagem*",
+        e_btn: "Enviar",
+    },
+    en: {
+        menu: "about us",
+        menu1: "Services",
+        menu2: "ESG/impact",
+        conta: "contact",
+        e_title: "Contact us:",
+        e_nome: "Full name*",
+        e_empresa: "Company Name*",
+        e_email: "E-mail*",
+        e_tele: "Phone*",
+        e_msg: "Message*",
+        e_btn: "Submit",
+
+    }
+};
+
+// Função para atualizar os textos com base no idioma selecionado
+function updateLanguage() {
+    const selectedLang = document.getElementById('lang-select').value;
+    document.getElementById('menu').textContent = languages[selectedLang].menu;
+    document.getElementById('menu1').textContent = languages[selectedLang].menu1;
+    document.getElementById('menu2').textContent = languages[selectedLang].menu2;
+    document.getElementById('conta').textContent = languages[selectedLang].conta;
+    document.getElementById('e_title').textContent = languages[selectedLang].e_title;
+    document.getElementById('e_nome').textContent = languages[selectedLang].e_nome;
+    document.getElementById('e_empresa').textContent = languages[selectedLang].e_empresa;
+    document.getElementById('e_email').textContent = languages[selectedLang].e_email;
+    document.getElementById('e_tele').textContent = languages[selectedLang].e_tele;
+    document.getElementById('e_msg').textContent = languages[selectedLang].e_msg;
+    document.getElementById('e_btn').textContent = languages[selectedLang].e_btn;
+}
+
+// Adicione um ouvinte de evento para alterar o idioma quando uma nova opção for selecionada
+document.getElementById('lang-select').addEventListener('change', updateLanguage);
+
+// Chame a função inicialmente para exibir o conteúdo no idioma padrão
+updateLanguage();
+
+    </script>
+</body>
+</html>
